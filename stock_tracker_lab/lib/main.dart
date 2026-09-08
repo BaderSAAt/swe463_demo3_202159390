@@ -27,7 +27,10 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Widgets Demo'),
+        title: const Text('Welcome to your stock market tracker!, my name is Bader Almutairi', 
+        style:TextStyle(color: Colors.white)  ), //Styling the Text
+        backgroundColor: Colors.lightBlue // Change the background color,
+
       ),
       body: const Center(
         child: Text('Widgets Basics'),

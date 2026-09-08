@@ -32,12 +32,19 @@ class MyHomePage extends StatelessWidget {
         backgroundColor: Colors.lightBlue // Change the background color,
 
       ),
-      body: const Column(
+      body: Column( // Const was removed to allow Container to used
   children: [
-    Text(
+    Container(
+      decoration: BoxDecoration(
+        color: Colors.purpleAccent,
+        borderRadius: BorderRadius.circular(16),
+      ),
+      child: Text(
       "Today's value: \$1000",
       key: ValueKey('todayValue'),
+    )
     ),
+    
     Text(
       'Revenue/Loss: +5%',
       key: ValueKey('revenueLoss'),
